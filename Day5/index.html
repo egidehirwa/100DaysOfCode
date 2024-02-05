@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="card-wrapper">
+                <h1>Payment</h1>
+                <div class="card-radio-wrapper">
+                    <div class="card-radio"></div>
+                    <p class="card-radio__title">card</p>
+                </div>
+                <div class="form-wrapper">
+                    <form>
+                        <p>Pay with a card</p>
+                        <div class="input-wrapper">
+                            <input type="number" name="card" id="card-number" placeholder="card number">
+                            <input type="date" name="date" id="card-date" placeholder="mm/dd">
+                            <input type="number" name="cvc" id="card-cvc" placeholder="cvc">
+                        </div>
+                        <input type="radio" name="remember" id="card-remember">
+                        <label for="radio" id="radio-label">Remember my card</label>
+                    </form>
+                </div>
+                <div class="pay-later-wrapper">
+                    <div class="radio-select"></div>
+                    <div class="pay-later">
+                        <p class="pay-later__title">Get first. Pay later.</p>
+                        <p class="pay-later__description">
+                            Pay within 30 days.
+                        </p>
+                    </div>
+                </div>
+                <button>Continue</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
