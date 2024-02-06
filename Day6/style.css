@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: hsl(212.31,100%,97.45%);
+    --bg-dark: hsl(225.71,60%,93.14%);
+    --action: hsl(248.72,46.61%,50.78%);
+    --fb: hsl(218.43,42.58%,40.98%);
+    --tw: hsl(203.32,85.02%,55.49%);
+    --card-shadow: box-shadow: 0px 10px 15px -3px var(--action);
+}
+
+section {
+    position: relative;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.round-deco {
+    position: absolute;
+    z-index: 3;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: var(--bg-dark);
+}
+
+.round-deco2 {
+    position: absolute;
+    z-index: 2;
+    width: 470px;
+    height: 470px;
+    border-radius: 50%;
+    border: solid 12px var(--bg-dark);
+    background-color: var(--bg);
+}
+
+.round-deco3 {
+    position: absolute;
+    z-index: 1;
+    width: 590px;
+    height: 590px;
+    border-radius: 50%;
+    border: solid 5px var(--bg-dark);
+    background-color: var(--bg);
+}
+
+/* Link card */
+
+.card-link {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    /* box-shadow: var(--card-shadow) */
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    z-index: 10;
+}
+
+.heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inputs-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.link__title {
+    color: var(--action);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.link__description {
+    color: var(--action);
+    font-size: 14px;
+}
+
+select, input {
+    padding: 10px 10px;
+    border: solid 1px var(--bg-dark);
+    border-radius: 5px;
+    color: var(--action);
+}
+
+input::placeholder {
+    color: hsla(249, 47%, 51%, 0.61);
+}
+
+
+
+.buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+button {
+    padding: 12px 30px;
+    background-color: var(--action);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--action);
+}
+
+/* Promote card */
+
+.card-promote {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    /* box-shadow: var(--card-shadow) */
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    z-index: 5;
+}
+
+.promote__title {
+    color: var(--action);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.promote__description {
+    color: var(--action);
+    font-size: 14px;
+}
+
+.promote-link-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: auto;
+}
+
+.share-text {
+    color: var(--action);
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+/* Social media icons */
+
+.icons-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.icon-fb {
+    background-color: var(--fb);
+}
+
+.icon-tw {
+    background-color: var(--tw);
+}
+
+.facebook {
+    width: 15px;
+    color: white;
+}
+
+.twitter {
+    width: 25px;
+}
