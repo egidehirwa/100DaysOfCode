@@ -28,11 +28,10 @@ section {
 
 .collection-card-wrapper {
     background-color: var(--bg-card);
-    padding: 40px;
     border-radius: 20px;
     width: 500px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
     gap: 10px;
 }
 
@@ -41,6 +40,7 @@ section {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    padding: 40px;
     position: relative;
 }
 
@@ -68,15 +68,19 @@ button {
 .collection-card__media-wrapper {
     position: relative;
     width: auto;
+    height: auto;
+    background-color: red;
+    overflow: hidden;
 }
 
 .collection-card__media { 
     position: absolute;
     top: 0;
     left:0;
-    width: auto;
-}
-
-img {
-    width: auto;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+    width: 200px;
+    height: 280px;
+    object-position: 30% 50%;
 }
