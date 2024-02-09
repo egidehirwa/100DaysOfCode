@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg: hsl(226.67,52.94%,96.67%);
+    --dark: hsl(238,36.59%,16.08%);
+    --light: hsl(245.45,12.64%,82.94%);
+    --bg-card1: hsl(230,50%,92.94%);
+    --bg-card2: hsl(303.33,50%,92.94%);
+    --bg-card3: hsl(357.14,67.74%,93.92%);
+    --link: hsl(237.35,71.07%,68.82%);
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--bg);
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    border: solid 4px var(--dark);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 60rem;
+}
+
+.search__title {
+    font-size: 18px;
+    color: var(--dark);
+}
+
+input {
+    padding: 10px 20px;
+    width: 70%;
+    border: solid 1.5px var(--light);
+    border-radius: 2px;
+}
+
+input::placeholder {
+    color: var(--light);
+}
+
+/* 1st Card */
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card-wrapper {
+    background-color: var(--bg-card1);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.card__title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.card__description {
+    text-align: left;
+    font-size: .9rem;
+}
+
+.card2 {
+    background-color: var(--bg-card2);
+}
+
+.card3 {
+    background-color: var(--bg-card3);
+}
+
+.card__cta {
+    color: var(--dark);
+    text-decoration: none;
+    border: solid 1px var(--light);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: .8rem;
+}
+
+/* Second card */
+
+.text-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.text-card-wrapper {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.text-card__title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Media queries */
+
+@media (max-width: 700px) {
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .text-card-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
