@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: hsl(227.14,100%,97.25%);
+    --bg-card: hsl(0,0%,100%);
+    --action: hsl(230.48,53.85%,22.94%);
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--bg);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 60rem;
+    margin: 20px;
+}
+
+.card-wrapper {
+    width: 250px;
+    background-color: var(--bg-card);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.card-media-wrapper {
+    width: 50px;
+    height: 50px;
+    border: solid 1px rgba(128, 128, 128, 0.386);
+    border-radius: 50%;
+}
+
+.card-monthly-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-monthly__price {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card-monthly__price::before {
+    content: 'KR';
+    font-size: .8rem;
+}
+
+.card-monthly__description {
+    display: flex;
+    flex-direction: column;
+    font-size: .7rem;
+}
+
+.card-price-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px
+}
+
+.card-price__container {
+    width: 30px;
+    height: 30px;
+    border: solid 1px rgba(128, 128, 128, 0.386);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+}
