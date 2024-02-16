@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-main: hsl(0,0%,93.73%);
+    --action: hsl(209.68,79.66%,46.27%);
+    --action-dark: hsl(208.21,82.35%,40%);
+    --bg-card: hsl(210,25%,96.86%);
+    --text: hsl(189.23,11.61%,43.92%);
+    --alert: hsl(343.48,67.65%,60%);
+}
+
+section {
+    height: 100vh;
+    background: linear-gradient(rgba(24,119,212) 0% 30%, rgba(239,239,239) 30%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+.container {
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+}
+
+i {
+    color: white;
+    font-size: 18px;
+}
+
+.account-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.account__user-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--action-dark);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.account__user {
+    font-weight: bold;
+}
+
+.account__user-wrapper i {
+    font-size: 14px;
+}
+
+/* Account card */
+
+.account-card {
+    background-color: white;
+    width: 37s0px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -3px hsla(210, 80%, 46%, 0.258);
+    overflow: hidden;
+}
+
+.account-card__header-wrapper {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.account-card__media-wrapper {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.account-card__media {
+    object-fit: cover;
+    object-position: 50% 10%;
+}
+
+.account-card__user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.account-card__user-wrapper {
+    color: var(--text);
+}
+
+.account-card__username {
+    color: var(--text);
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.account-user__button-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    background-color: var(--action);
+    color: white;
+    border-radius: 10px;
+}
+
+.btn--secondary {
+    background-color: transparent;
+    color: var(--action);
+}
+
+.account-card__content-wrapper {
+    background-color: var(--bg-card);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--text);
+    font-size: 1.1rem;
+}
+
+.account-card__link {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.account-card__link span {
+    color: var(--alert);
+    font-weight: bold;
+}
