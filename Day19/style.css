@@ -22,12 +22,13 @@ section {
 }
 
 .alarm-wrapper {
-    background-color: var(--bg-body);
+    background: linear-gradient( to bottom, hsl(208,88.24%,16.67%) 40%, var(--bg-body) 40%);
     width: 300px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px
+    padding: 20px;
+    position: relative;
 }
 
 .alarm__header {
@@ -60,10 +61,49 @@ section {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-top: 40px;
+}
+
+.day__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.day__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.day__time {
+    font-size: 1.4rem;
 }
 
 .day__week {
     display: flex;
     flex-direction: row;
     gap: 10px;
+}
+
+.add-time {
+    position: absolute;
+    right: 10%;
+    top: 35%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--action);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.add-time i {
+    font-size: 1.5rem;
+}
+
+i {
+    cursor: pointer;
 }
