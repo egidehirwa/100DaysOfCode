@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 22 - Clock in app</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+    <div class="container">
+        <div class="header">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+            <ion-icon name="search-outline"></ion-icon>
+        </div>
+        <div class="body">
+            <h1 class="clock__heading">Your Hours</h1>
+        <div class="clock-wrapper">
+            <div class="clock__select-wrapper">
+                <label for="choose" class="label-select">Select hour type</label>
+                <select name="choose" id="clock-select">
+                    <option value="overworked">Overworked hours</option>
+                    <option value="scheduled">Scheduled hours</option>
+                </select>
+                <div class="change-hours">
+                    <input type="number" name="change__number" id="change__number" value="1">
+                    <div class="plus change-icon">
+                        <ion-icon name="add-outline"></ion-icon>
+                    </div>
+                    <div class="minus change-icon">
+                        <ion-icon name="remove-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons-wrapper">
+                <button class="btn--secondary">Cancel</button>
+                <button>Save</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
