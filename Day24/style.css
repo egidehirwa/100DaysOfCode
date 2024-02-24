@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: hsl(221.25,68.97%,22.75%);
+    --bg-header: hsl(220.87,74.19%,18.24%) ;
+    --bg-body: hsl(223.1,65.14%,21.37%);
+    --action: hsl(198.68,100%,41.57%);
+    --text: hsl(200,16.8%,75.49%);
+    --text-light: hsl(222.25,41.04%,33.92%);
+}
+
+section {
+    background-color: var(--bg);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    color: var(--text);
+    padding: 20px;
+}
+
+.course-wrapper {
+    width: 550px;
+    box-shadow: 20px 10px 25px 10px rgba(0,0,0,0.1);
+}
+
+.course__header {
+    background-color: var(--bg-header);
+    padding: 50px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    color: var(--action);
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    text-transform: capitalize;
+}
+
+.course__description {
+    font-size: 1em;
+    letter-spacing: 1.4px;
+}
+
+.course__body {
+    background-color: var(--bg-body);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lessons {
+    display: flex;
+    flex-direction: column;
+}
+
+.exercices {
+    font-size: 1em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 20px 30px;
+}
+
+.lesson {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;;
+    cursor: pointer;
+}
+
+.lesson__title {
+    font-size: 1.5em;
+}
+
+ion-icon {
+    font-size: 1.6em;
+}
+
+.muted {
+    color: var(--text-light);
+}
+
+.selected {
+    background-color: var(--action);
+    color: white;
+}
+
+.selected .lesson__title {
+    color: white;
+}
+
+/* Media queries */
+
+@media (width < 700px) {
+    .course-wrapper {
+        width: 400px;
+    }
+}
+
+@media (width < 400px) {
+    .course-wrapper {
+        width: 300px;
+    }
+}
