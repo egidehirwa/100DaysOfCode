@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 25 - E Ticket</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="card-wrapper">
+                <div class="header">
+                    <div class="wifi-wrapper">
+                        <p class="phone">iPhone</p>
+                        <ion-icon name="wifi-outline"></ion-icon>
+                    </div>
+                    <div class="time">4:21PM</div>
+                    <div class="settings-wrapper">
+                        <ion-icon name="bluetooth-outline"></ion-icon>
+                        <p class="battery-percent">100%</p>
+                        <ion-icon name="battery-full-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="body">
+                    <h2>My Tickets</h2>
+                    <div class="ticket-wrapper">
+                        <div class="ticket__info">
+                            <h1 class="ticket__title">The legend of Tarzan</h1>
+                            <p class="ticket__number">Booking nr: <span class="booking__number">#25668</span> </p>
+                            <div class="seating-wrapper">
+                                <div class="seating__item">
+                                    <p class="seating__text">Room</p>
+                                    <p class="seating__number">14</p>
+                                </div>
+                                <div class="seating__item">
+                                    <p class="seating__text">Row</p>
+                                    <p class="seating__number">7</p>
+                                </div>
+                                <div class="seating__item">
+                                    <p class="seating__text">Seat</p>
+                                    <p class="seating__number">18</p>
+                                </div>
+                            </div>
+                            <div class="extra-infos">
+                                <p class="price"> Price <span class="extra-style">$5</span></p>
+                                <p class="date">Date <span class="extra-style"> 09.05.2016</span></p>
+                            </div>
+                        </div>
+                        <div class="ticket__scan">
+                            <img src="./assets/barcode.png" alt="ticket scan code" width="250px">
+                        </div>
+                    </div>
+                    <p class="ticket-description">Use the booking number to pick up your tickets before the show</p>
+                </div>
+                <div class="footer">
+                    <div class="nav-item">
+                        <ion-icon class="nav-icon" name="home-outline"></ion-icon>
+                        <p class="nav-title">Home</p>
+                    </div>
+                    <div class="nav-item">
+                        <ion-icon class="nav-icon" name="film-outline"></ion-icon>
+                        <p class="nav-title">Movies</p>
+                    </div>
+                    <div class="nav-item">
+                        <ion-icon class="nav-icon" name="star-outline"></ion-icon>
+                        <p class="nav-title">Favorites</p>
+                    </div>
+                    <div class="nav-item">
+                        <ion-icon class="nav-icon" name="ticket-outline"></ion-icon>
+                        <p class="nav-title">My Tickets</p>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </section>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

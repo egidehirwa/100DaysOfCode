@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-card: hsl(0,0%,92.55%);
+    --action: hsl(22.76,91.03%,56.27%);
+    --action-secondary: hsl(346.25,91.43%,58.82%);
+}
+
+section {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    /* background: linear-gradient(180%, var(--action), var(--action-secondary)), */
+    background-image: url(https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    padding: 20px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: hsla(23, 91%, 56%, 0.405); 
+}
+
+.card-wrapper {
+    background-color: var(--bg-card);
+    width: 350px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 5;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: .8rem;
+}
+
+.wifi-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.settings-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Ticket */
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0px;
+}
+
+h2 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 2px;
+}
+
+.ticket-wrapper {
+    background-color: white;
+    width: 90%;
+}
+
+.ticket__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0px;
+    border-top: 5px solid var(--action);
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--action);
+}
+
+.ticket__number {
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+.booking__number {
+    font-weight: 700;
+    font-size: 1.6em;
+}
+
+.seating-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: var(--action);
+    width: 100%;
+    padding: 20px;
+}
+
+.seating__item {
+    display: grid;
+    place-items: center;
+}
+
+.seating__text {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.seating__number {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+.extra-infos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.extra-style {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.ticket__scan {
+    display: grid;
+    place-items: center;
+    padding: 30px 20px;
+    border-top: 1px dashed gray;
+}
+
+.ticket-description {
+    text-align: center;
+    max-width: 30ch;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px 0px;
+    background-color: white;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-item ion-icon {
+    color: var(action);
+    font-size: 1.6em;
+}
+
+.nav-title {
+    color: var(--action);
+}
+
