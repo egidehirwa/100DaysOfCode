@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+:root {
+    --bg: hsl(0,0%,96.47%);
+    --bg-card: hsl(233.51,50.68%,14.31%);
+    --action: hsl(212.85,89.95%,60.98%);
+    --card-width: 400px;
+}
+
+section {
+    min-height: 100vh;
+    background-color: var(--bg);
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    max-width: 68rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-wrapper {
+    width: var(--card-width);
+    background-color: var(--bg-card);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0px 0px 25px 20px rgba(0,0,0,0.1);
+}
+
+.card__media-wrapper {
+    width: 50px;
+}
+
+.card__media {
+    width: 100%;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card__description {
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: var(--action);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn--secondary {
+    background-color: transparent;
+    color: var(--action);
+}
+
+.close {
+    position: absolute;
+    font-size: 1.6em;
+    top: 10%;
+    right: 5%;
+    color: gray;
+    cursor: pointer;
+}
+
+/* Notification 2 */
+
+.notif-wrapper {
+    box-shadow: 0px 0px 25px 20px rgba(0,0,0,0.1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: var(--card-width);
+    border-radius: 10px;
+    position: relative;
+}
+
+.notif__media-wrapper {
+    width: 120px;
+    height: 120px;
+    /* aspect-ratio: 1; */
+    background-color: rgb(227, 227, 227);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.notif__media {
+    inset: 0;
+    width: 60%;
+}
+
+.notif__description {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    width: 25ch;
+}
+
+.notif-close {
+    position: absolute;
+    font-size: 1.6em;
+    top: 10%;
+    right: 5%;
+    color: gray;
+    cursor: pointer;
+}
+
+.btn--notif {
+    padding: 15px 25px;
+}
