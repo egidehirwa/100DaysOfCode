@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 28 - Filter components</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <input type="search" name="search" id="search" placeholder="Search for apps">
+        <label for="sort" class="custom-select">
+            <select name="sort" id="sort" selected="Sort" class="sort">
+                <option disabled selected>Sort</option>
+                <option value="rated">Top rated</option>
+                <option value="trending">Top trending</option>
+                <option value="selling">Top selling</option>
+                <option value="newest">Newest</option>
+            </select>
+        </label>
+        <label for="check" class="custom-checkbox">
+            <input type="checkbox" name="check" id="check">
+            <span class="checkmark"></span>
+            Free for all teams
+        </label>
+        <select name="filters" id="filters">
+            <option disabled selected>More filters</option>
+            <option value="best">Best</option>
+            <option value="bestest">Bestest</option>
+        </select>
+        <select name="category" id="category">
+            <option disabled selected>Categories</option>
+            <option value="instagram">Instagram</option>
+            <option value="facebook">Facebook</option>
+            <option value="linkedin">LinkedIn</option>
+        </select>
+    </header>
+    <main>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
