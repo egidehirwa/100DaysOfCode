@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'system-ui', sans-serif;
+}
+
+:root {
+    --bg: hsl(206.67,64.29%,94.51%);
+    --bg-card: hsl(205.71,53.85%,97.45%);
+    --action: hsl(41.51,100%,66.27%);
+    --active: hsl(28.09,100%,66.08%);
+}
+
+section {
+    min-height: 100vh;
+    background-color: var(--bg);
+    display: grid;
+    place-items: center;
+}
+
+.card-wrapper {
+    max-width: 150px;
+    background-color: var(--bg-card);
+    padding: 20px 15px;
+    border-radius: 6px;
+    border-top: 5px solid var(--action);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: .7em;
+    letter-spacing: 2px;
+    line-height: 1.4;
+    text-align: center;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.icon-wrapper {
+    background-color: white;
+    width: 100px;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.icon-wrapper:hover {
+    background-color: var(--active);
+    color: white;
+}
+
+.icon-wrapper i {
+    font-size: 1.6em;
+}
+
+.icon-wrapper i:hover {
+    color: white;
+}
+
+.followers {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.fa-facebook-f {
+    color: hsl(206.81,81.74%,54.9%);
+}
+
+.fa-instagram {
+    color: hsl(39.71,94.59%,56.47%);
+}
+
+.fa-twitter {
+    color: hsl(211.03,96.67%,76.47%);
+}
+
+.add {
+    background-color: var(--action);
+    padding: 5px 40px;
+    width: 100px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.add i {
+    color: white;
+    font-size: 1.7em;
+}
