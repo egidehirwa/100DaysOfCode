@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica, sans-serif;
+}
+
+:root {
+    --bg: hsl(240,16.67%,97.65%);
+    --bg-secondary: hsl(240,48.15%,94.71%);
+    --bg-card: hsl(0,0%,100%);
+    --border: hsl(229.57,79.31%,94.31%);
+    --accent-dark: hsl(234.29,14.09%,70.78%);
+
+    --deco-lg: 100px;
+    --deco-md: 80px;
+    --deco-sm: 40px;
+
+}
+
+section {
+    background: linear-gradient(130deg, var(--bg), var(--bg-secondary));
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+.app-container {
+    width: 600px;
+    background-color: var(--bg-card);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+    z-index: 5;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.app__title {
+    font-weight: 400;
+    font-size: 2em;
+}
+.app__description {
+    max-width: 38ch;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.option {
+    /* background-color: blue; */
+    display: grid;
+    place-items: center;
+    gap: 15px;
+    padding: 30px;
+    border: 15px solid var(--border);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.option i {
+    font-size: 2em;
+}
+
+.app-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: var(--accent-dark);
+    cursor: pointer;
+}
+
+/* Background decorations */
+
+.deco {
+    position: absolute;
+    inset: 0;
+}
+
+.deco-circle {
+    background-color: white;
+    width: var(--deco-md);
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.deco1 {
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    width: var(--deco-lg);
+}
+
+.deco2 {
+    position: absolute;
+    bottom: 140px;
+    right: 280px;
+    width: var(--deco-sm);
+}
+
+.deco3 {
+    position: absolute;
+    top: 220px;
+    right: 20px;
+    width: calc(var(--deco-lg)*2);
+}
+
+.deco4 {
+    position: absolute;
+    top: 100px;
+    right: 80px;
+    width: var(--deco-sm);
+}
+
+.deco5 {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: calc(var(--deco-sm)/2);
+}
+
+.deco6 {
+    position: absolute;
+    bottom: 300px;
+    left: 10px;
+    width: var(--deco-md);
+}
+
+/* Responsive */
+
+@media (width < 600px) {
+    .app-container {
+        width: 400px;
+    }
+
+    .app-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        margin-top: 40px;
+    }
+}
