@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: hsl(223.26,42.57%,39.61%);
+    --bg-secondary: hsl(184.68,79.66%,34.71%);
+    --bg-light: hsl(185,60%,96.08%);
+    --action: hsl(174.03,100%,35.49%);
+    --action-secondary: hsl(195,63.16%,62.75%);
+    --text-light: hsl(0,0%,65.88%);
+    --text-dark: hsl(220.5,41.67%,37.65%);
+}
+
+section {
+    min-height: 100vh;
+    background: linear-gradient(50deg, var(--bg), var(--bg-secondary));
+    display: grid;
+    place-items: center;
+}
+
+.profile-container {
+    background-color: white;
+    width: 350px;
+}
+
+.profile__head {
+    background-color: var(--bg-light);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profile__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profile__media-wrapper {
+    width: 120px;
+    aspect-ratio: 1;
+    background-color: var(--action-secondary);
+    border: 5px solid var(--action-secondary);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.profile__media {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    object-position: 100% 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.profile__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-top: .5px solid var(--bg);
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.progress-bar label {
+    display: flex;
+    flex-direction: column;
+}
+
+.bar__title {
+    color: var(--bg-secondary);
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+}
+
+footer {
+    background-color: var(--action);
+    text-align: center;
+    padding: 25px; 
+    cursor: pointer;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
