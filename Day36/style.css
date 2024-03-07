@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', sans-serif;
+}
+
+:root {
+    --action: hsl(177.3,52.61%,58.63%);
+    --accent: hsl(32.9,97.89%,62.75%);
+    --brand-blue: hsl(209.38,61.18%,46.47%);
+}
+
+section {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-image: url("https://images.pexels.com/photos/1802268/pexels-photo-1802268.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-position: 50% 30%;
+    padding: 20px;
+}
+
+.auth-container {
+    max-width: 380px;
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+.auth__header {
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+
+.auth__header button {
+    width: 50%;
+    border: none;
+    color: var(--action);
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.btn--sign-up {
+    background-color: transparent;
+}
+
+/* Body */
+
+.auth__body {
+    width: 100%;
+    padding: 70px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid var(--action);
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+input:first-child {
+    margin-top: 0;
+}
+
+input::placeholder {
+    color: rgb(182, 181, 181);
+    font-size: 1.2em;
+}
+
+.gender-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 20px;
+    gap: 20px;
+}
+
+.gender-wrapper label {
+    display: flex;
+    gap: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn--primary {
+    background-color: var(--accent);
+    padding: 20px;
+    width: 100%;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.separator {
+    color: white;
+    text-align: center;
+    padding-block: 20px;
+    font-size: 1.2em;
+    position: relative;
+}
+
+.separator::before {
+    position: absolute;
+    content: "";
+    width: 15%;
+    height: 1px;
+    background-color: var(--action);
+    top: 50%;
+    left: 27%;
+}
+
+.separator::after {
+    position: absolute;
+    content: "";
+    width: 15%;
+    height: 1px;
+    background-color: var(--action);
+    top: 50%;
+    right: 27%;
+}
+
+.social-login {
+    background-color: var(--brand-blue);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.social-login i {
+    font-size: 1.6em;
+}
