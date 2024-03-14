@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: hsl(225,33.33%,95.29%);
+    --bg-card: hsl(234,71.43%,97.25%);
+    --action: hsl(229.09,97.06%,73.33%);
+    --shadow: hsl(226.15,22.03%,88.43%);
+}
+
+section {
+    background-color: var(--bg);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 250px;
+}
+
+.buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
+.btn {
+    padding: 15px;
+    font-size: .9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--bg);
+    cursor: pointer;
+}
+
+.btn {
+    box-shadow: -0.3rem -0.3rem 0.4rem white,
+                0.1rem 0.1rem 0.3rem #cbcbcb;
+}
+
+.card {
+    box-shadow: 0.1rem 0.1rem 0.2rem #fff;
+}
+
+.card-shadow {
+    box-shadow: inset -0.2rem -0.2rem 0.2rem white,
+                inset 0.1rem 0.1rem 0.3rem #cbcbcb;
+}
+
+.card-shadow {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--shadow);
+}
+
+.card {
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background-color: var(--bg-card);
+    border-radius: 10px;
+
+    i {
+        font-size: 2em;
+    }
+
+    .card__description {
+        width: 18ch;
+        text-align: center;
+    }
+
+    .btn--primary {
+        padding: 10px 40px;
+        color: white;
+        background-color: var(--action);
+        border-radius: 20px;
+        border: none;
+    }
+}
+
