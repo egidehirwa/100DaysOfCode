@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg: hsl(300,14.29%,98.63%);
+    --accent1: hsl(38.93,90.31%,55.49%);
+    --accent2: hsl(214.06,77.11%,60.59%);
+    --accent3: hsl(49.06,98.97%,61.96%);
+}
+
+section {
+    min-height: 100vh;
+    background-color: var(--bg);
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 500px;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    font-size: .9em;
+    font-weight: 400;
+}
+
+input {
+    padding: 10px;
+    border: none;
+}
+
+input::placeholder {
+    color: gray;
+    font-size: 1.4em;
+}
+
+.extra {
+    display: flex;
+    gap: 10px;
+
+    i {
+        font-size: 1.2em;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    i:hover {
+        background-color: rgba(226, 226, 226, 0.585);
+        border-radius: 2px;
+    }
+}
+
+.active {
+    background-color: rgba(226, 226, 226, 0.585);
+        border-radius: 2px;
+}
+
+.fa-camera {
+    color: var(--accent1);
+}
+
+.fa-paperclip {
+    color: var(--accent2);
+}
+
+.fa-face-smile {
+    color: var(--accent3);
+}
